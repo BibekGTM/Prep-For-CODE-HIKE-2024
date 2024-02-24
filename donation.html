@@ -1,62 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<head>
-  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="donationstyle.css">
-	<link rel="stylesheet" href="style2.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Donation Page</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="donationstyle.css">
 </head>
 <body>
-<div class="donation-container">
-            
-            <div class="donation-box">
-	            <div class="title">Donation Information</div>
-	            
-	            <div class="fields">
-		            <input type="text" id="firstName" placeholder="First Name"> </input>
-		            <input type="text" id="lastName" placeholder="Last Name"> </input>
-		            <input type="text" id="email" placeholder="Email"> </input>
-	            </div>
-	            
-	            <div class="amount">
-		            <div class="button">$30</div>
-		            <div class="button">$50</div>
-		            <div class="button">$100</div>
-		            <div class="button">$<input type="text" class="set-amount" placeholder=""> </input></div>
-	            </div>
-	            
-	            <div class="switch">
-					<input type="radio" class="switch-input" name="view" value="One-Time" id="one-time" checked="">
-					<label for="one-time" class="switch-label switch-label-off">One-Time</label>
-					<input type="radio" class="switch-input" name="view" value="Monthly" id="monthly">
-					<label for="monthly" class="switch-label switch-label-on">Monthly</label>
-					<span class="switch-selection"></span>
-			    </div>
-			    
-			    <div class="checkboxes">
-					<input type="checkbox" id="receipt" class="checkbox" />
-					<label for="receipt">Email Me A Receipt</label>
-					<br />
-					<input type="checkbox" id="anon" class="checkbox" />
-					<label for="anon">Give Anonymously</label>
-					<br />
-					<input type="checkbox" id="list" class="checkbox" />
-					<label for="list">Add Me To Email List</label>
-			    </div>
-			    
-			    <div class="confirm">
-				    
-			    </div>
-	            
-	            <div class="donate-button"><i class="fa fa-credit-card"></i> Donate Now</div>
-            </div>
-            
-        </div>
-
+	<div class="container">
+		<div class="left">
+			<div class="header">
+				<p>YOUR DETAILS</p>
+			</div>
+			<input class="details" placeholder="First Name">
+			<input class="details" placeholder="Last Name">
+			<input class="details" placeholder="Email">
+			<input class="details" placeholder="Organization">
+			<input class="details" placeholder="Address">
+			<label class="countryLabel" for="country">Country</label>
+			<select name="country" id="country">
+				<option value="nepal">Nepal</option>
+				<option value="nepal">India</option>
+				<option value="nepal">Others</option>
+			</select>
+			<input class="details" placeholder="Phone Number">
+			<input class="feedback" placeholder="Feedback">
+		</div>
+		<div class="right">
+			<div class="header">
+				<p>YOUR DONATIONS</p>
+			</div>
+			<div class="title">
+				<p>Donation type</p>
+			</div>
+			<input type="radio" id="oneTime" name="donationType" class="blockInput">
+			<label for="oneTime">Once-off-Gift</label><br>
+			<input type="radio" id="periodic" name="donationType" class="blockInput">
+			<label for="periodic">Monthly-Gift</label>
+			<div class="title">
+				<p>Donation Amount</p>
+			</div>
+			<input type="radio" id="100" name="donationAmt" class="blockInput">
+			<label for="100">$100</label><br>
+			<input type="radio" id="200" name="donationAmt" class="blockInput">
+			<label for="200">$200</label><br>
+			<input type="radio" id="500" name="donationAmt" class="blockInput">
+			<label for="200">$500</label>
+			<div class="header">
+				<p>CREDIT CARD</p>
+			</div>
+			<div class="cardImg">
+				<img class="creditImg" src="creditImg.png">
+			</div>
+			<p class="cardDetials">Name On Card: </p>
+			<input placeholder="Name On Card">
+			<p class="cardDetials">Card Number: </p>
+			<input placeholder="0000 0000 0000 0000">
+			<p class="cardDetials">Expiration Date </p>
+			<input placeholder="mm/yyyy">
+			<p class="cardDetials">CVV</p>
+			<input placeholder="xxx">
+			<button class="donateBtn">Donate</button>
+		</div>
+	</div>       
+</div>
 </body>
 </html>
