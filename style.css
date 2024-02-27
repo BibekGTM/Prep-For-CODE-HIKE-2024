@@ -82,7 +82,7 @@ li:active{
 }
 .background{
   margin: 0;
-  background-image: url(background.jpg);
+  background-image: url(images/background.jpg);
   height: 100vh;
   background-position: center;
   background-size: cover;
@@ -136,7 +136,7 @@ li:active{
 .box-section {
   display: inline-block;
   margin: 0;
-  background-image: url(forest.jpg);
+  background-image: url(images/forest.jpg);
   height: 100vh;
   background-position: center;
   background-size: cover;

@@ -6,7 +6,7 @@ input {
 }
 body{
   margin: 0;
-  background-image: url(donationimg.jpg	);
+  background-image: url(images/donationimg.jpg	);
   height: 100vh;
   background-position: center;
   background-size: cover;
