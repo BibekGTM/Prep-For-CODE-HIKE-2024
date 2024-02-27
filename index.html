@@ -1,40 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Conservation of the forest</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="title">
-    <nav>
-      <ul>
-        <li>Forest</li>
-        <li id="home">Home</li>
-        <li id="about">About</li>
-        <li id="service">Service</li>
-        <li id="gallery">Gallery</li>
-        <li id="team">Team</li>
-        <li id="contact">Contact</li>
-      </ul>
-    </nav>
-  </div>
-
-  <div class="text">
-    <p class="heading">Global Warming</p>
-    <p class="save">Save Forest And Save Earth</p>
-    <p class="mother">We provide ways how to protect our mother Earth</p>
-  </div>
-
-  <div class="buttons">
-    <button class="about">
-      About Us
-    </button>
-    <button class="join">Join Us</button>
-    <form action="donation.html" method="post">
-      <input class="donate" placeholder="Donate to us" type="submit"/>
-    </form>
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conservation of the forest</title>
+    <link rel="stylesheet" href="donationstyle.css" >
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="background">
+          <div class="title">
+            <nav>
+              <ul>
+                <li>Forest</li>
+                <li>Home</li>
+                <li>About</li>
+                <li><a href="#service">Service</a></li>
+                <li>Gallery</li>
+                <li>Team</li>
+                <li>Contact
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="text">
+            <p class="heading">Global Warming</p>
+            <p class="save">Save Forest And Save Earth</p>
+            <p class="mother">We provide ways how to protect our mother Earth</p>
+        
+          </div>
+          <div class="buttons">
+          <button class="about">
+            About Us
+          </button>
+          <button class="join">Join Us</button>
+          </div>
+        </div>
+      </div>
+      <div id="service" class="box-section">
+        <div class="box-section-title">
+          Our services
+        </div>
+        <section class="box-container">
+          <div class="box">
+            <div class="icon">
+              <img class="icon-img" src="icons/leaf.png">
+            </div>
+            <div class="icon-name">Planting</div>
+            <div class="icon-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit non </div>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <img class="icon-img" src="icons/pawprint.png">
+            </div>
+            <div class="icon-name">Planting</div>
+            <div class="icon-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit non </div>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <img class="icon-img" src="icons/christmas-tree.png">
+            </div>
+            <div class="icon-name">Planting</div>
+            <div class="icon-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit non </div>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <img class="icon-img" src="icons/drop.png">
+            </div>
+            <div class="icon-name">Planting</div>
+            <div class="icon-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit non </div>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <img class="icon-img" src="icons/snowflake.png">
+            </div>
+            <div class="icon-name">Planting</div>
+            <div class="icon-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit non </div>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <img class="icon-img" src="icons/leaf.png">
+            </div>
+            <div class="icon-name">Planting</div>
+            <div class="icon-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit non </div>
+          </div>
+        </section>
+      </div>
+      <div class="donation">
+        <div class="donation-container">
+          <div class="left">
+            <div class="header">
+              <p>YOUR DETAILS</p>
+            </div>
+            <input class="details" placeholder="First Name">
+            <input class="details" placeholder="Last Name">
+            <input class="details" placeholder="Email">
+            <input class="details" placeholder="Organization">
+            <input class="details" placeholder="Address">
+            <label class="countryLabel" for="country">Country</label>
+            <select name="country" id="country">
+              <option value="nepal">Nepal</option>
+              <option value="nepal">India</option>
+              <option value="nepal">Others</option>
+            </select>
+            <input class="details" placeholder="Phone Number">
+            <input class="feedback" placeholder="Feedback">
+          </div>
+          <div class="right">
+            <div class="header">
+              <p>YOUR DONATIONS</p>
+            </div>
+            <div class="title">
+              <p>Donation type</p>
+            </div>
+            <input type="radio" id="oneTime" name="donationType" class="blockInput">
+            <label for="oneTime">Once-off-Gift</label><br>
+            <input type="radio" id="periodic" name="donationType" class="blockInput">
+            <label for="periodic">Monthly-Gift</label>
+            <div class="title">
+              <p>Donation Amount</p>
+            </div>
+            <input type="radio" id="100" name="donationAmt" class="blockInput">
+            <label for="100">$100</label><br>
+            <input type="radio" id="200" name="donationAmt" class="blockInput">
+            <label for="200">$200</label><br>
+            <input type="radio" id="500" name="donationAmt" class="blockInput">
+            <label for="200">$500</label>
+            <div class="header">
+              <p>CREDIT CARD</p>
+            </div>
+            <div class="cardImg">
+              <img class="creditImg" src="creditImg.png">
+            </div>
+            <p class="cardDetials">Name On Card: </p>
+            <input placeholder="Name On Card">
+            <p class="cardDetials">Card Number: </p>
+            <input placeholder="0000 0000 0000 0000">
+            <p class="cardDetials">Expiration Date </p>
+            <input placeholder="mm/yyyy">
+            <p class="cardDetials">CVV</p>
+            <input placeholder="xxx">
+            <button class="donateBtn">Donate</button>
+          </div>
+        </div>
+        
+      </div>       
+    </div>
+  
+    
+    
+  </body>
 </html>
